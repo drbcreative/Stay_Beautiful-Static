@@ -1,0 +1,157 @@
+/* -------------------------------------------------------------------------- */
+/* Typography */
+/* -------------------------------------------------------------------------- */
+@import "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Quicksand:300,400,500,700");
+
+$font-primary: "Quicksand", sans-serif;
+$font-secondary: "Playfair Display", serif;
+
+// General Font Setup
+// Headers
+/* Primary Header */
+h1 {
+  font-family: $font-secondary;
+  font-size: 3.125rem; // 50px
+  line-height: 3.125rem;
+  font-weight: 400;
+
+  &.is-bold {
+    font-weight: 700;
+  }
+
+  &.is-italic {
+    font-style: italic;
+  }
+}
+
+h2 {
+  font-family: $font-secondary;
+  font-size: 3.125rem; // 50px
+  line-height: 3.125rem;
+  font-weight: 400;
+
+  &.is-light {
+    font-weight: 300;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+
+  &.is-italic {
+    font-style: italic;
+  }
+}
+
+h3 {
+  font-family: $font-primary;
+  font-size: 1.875rem; // 30px
+  line-height: 1.875rem;
+  font-weight: 400;
+}
+
+/* All Other Headers */
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+  font-weight: 400;
+}
+.footer-header {
+  font-family: $font-primary;
+  font-size: 30px;
+  line-height: 30px;
+  &.is-light {
+    font-weight: 300;
+  }
+  &.is-bold {
+    font-weight: 700;
+  }
+  &.is-italic {
+    font-style: italic;
+  }
+}
+
+//Body Text
+.body-copy {
+  font-size: 1rem; // 20px
+  line-height: 2rem;
+  font-family: $font-primary;
+  font-weight: 300;
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+/* Lead Text (hero) */
+.lead-copy {
+  font-family: $font-primary;
+  font-size: 1.25rem; // 20px
+  line-height: 40px;
+  font-weight: 300;
+}
+
+/* Footer2 Text */
+.small-copy {
+  font-size: 1.125rem;
+  line-height: 22.5px;
+  font-family: $font-primary;
+  font-weight: 400;
+
+  &.is-semibold {
+    font-weight: 600;
+  }
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+/* Text Modifiers */
+.wrap-75 {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: $font-primary;
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5 h6 {
+  margin: 0 !important;
+}
+h2 {
+  margin: 1rem 0 1rem 0;
+}
+// h3 {
+//   /* will decide later */
+// }
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+// Font Size Breakpoints
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 200% !important;
+  }
+
+  h2 {
+    font-size: 200%;
+  }
+
+  h1 {
+    line-height: 2rem;
+  }
+
+  h2,
+  h3 {
+    line-height: 2rem;
+  }
+}

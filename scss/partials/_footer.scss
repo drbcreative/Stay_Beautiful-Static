@@ -1,0 +1,70 @@
+/* -------------------------------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* FOOTER 1 SECTION */
+/* -------------------------------------------------------------------------- */
+.footer1 {
+  min-height: 300px;
+  padding: 40px 10px;
+  background: url("../img/footer-1-bg@2x.jpg") center / cover;
+  position: relative;
+
+  .footer-link {
+    color: $color-dark;
+    font-family: $font-primary;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-dark-accent;
+    }
+  }
+
+  .blogimg {
+    width: 100%;
+    max-width: 175px;
+    height: auto;
+    display: block;
+  }
+
+  .ui-btn {
+    display: block;
+    width: auto !important;
+    max-width: 150px;
+    padding: 0.8rem 1.4rem;
+  }
+
+  #navlinks {
+    .footer-link:not(:last-child) {
+      line-height: 30px;
+    }
+  }
+  .footer-header {
+    margin-top: 0 !important;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* FOOTER 2 SECTION */
+/* -------------------------------------------------------------------------- */
+.footer2 {
+  background-color: $color-dark-accent;
+  width: 100%;
+  padding: 0.6rem 30px;
+
+  .footer-link {
+    color: $color-white;
+    font-family: $font-primary;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-dark;
+    }
+  }
+}

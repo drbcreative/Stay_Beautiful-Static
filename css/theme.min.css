@@ -1,0 +1,970 @@
+@charset "UTF-8";
+/* -------------------------------------------------------------------------- */
+/* COLOR THEME */
+/* -------------------------------------------------------------------------- */
+@import "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Quicksand:300,400,500,700");
+.color-main {
+  color: #b1945f; }
+
+.color-dark {
+  color: #413f44; }
+
+.color-dark-accent {
+  color: #6f6f74; }
+
+.color-extra-dark {
+  color: #000; }
+
+.color-light {
+  color: #f5f5f4; }
+
+.color-light-accent {
+  color: #808280; }
+
+.color-extra-light {
+  color: #fff; }
+
+.color-white {
+  color: #fff; }
+
+.color-black {
+  color: #000; }
+
+/* -------------------------------------------------------------------------- */
+/* Typography */
+/* -------------------------------------------------------------------------- */
+/* Primary Header */
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  font-weight: 400; }
+  h1.is-bold {
+    font-weight: 700; }
+  h1.is-italic {
+    font-style: italic; }
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  font-weight: 400; }
+  h2.is-light {
+    font-weight: 300; }
+  h2.is-bold {
+    font-weight: 700; }
+  h2.is-italic {
+    font-style: italic; }
+
+h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  font-weight: 400; }
+
+/* All Other Headers */
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400; }
+
+.footer-header {
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  line-height: 30px; }
+  .footer-header.is-light {
+    font-weight: 300; }
+  .footer-header.is-bold {
+    font-weight: 700; }
+  .footer-header.is-italic {
+    font-style: italic; }
+
+.body-copy {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300; }
+  .body-copy.is-bold {
+    font-weight: 700; }
+
+/* Lead Text (hero) */
+.lead-copy {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.25rem;
+  line-height: 40px;
+  font-weight: 300; }
+
+/* Footer2 Text */
+.small-copy, .topbar .containerish .topbar-link {
+  font-size: 1.125rem;
+  line-height: 22.5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400; }
+  .small-copy.is-semibold, .topbar .containerish .is-semibold.topbar-link {
+    font-weight: 600; }
+  .small-copy.is-bold, .topbar .containerish .is-bold.topbar-link {
+    font-weight: 700; }
+
+/* Text Modifiers */
+.wrap-75 {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto; }
+
+input {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300; }
+
+h1,
+h2,
+h3,
+h4,
+h5 h6 {
+  margin: 0 !important; }
+
+h2 {
+  margin: 1rem 0 1rem 0; }
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 200% !important; }
+  h2 {
+    font-size: 200%; }
+  h1 {
+    line-height: 2rem; }
+  h2,
+  h3 {
+    line-height: 2rem; } }
+
+/* -------------------------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------------------------- */
+header {
+  position: relative;
+  width: 100%;
+  z-index: 9999; }
+
+/* -------------------------------------------------------------------------- */
+/* TOP BAR */
+/* -------------------------------------------------------------------------- */
+.topbar {
+  width: 100%;
+  height: 30px;
+  height: auto;
+  background-color: #6f6f74; }
+  .topbar .containerish {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    padding: 0.2rem 0.5rem; }
+    .topbar .containerish .topbar-link {
+      color: #fff; }
+      .topbar .containerish .topbar-link:hover {
+        color: #413f44;
+        text-decoration: none; }
+    .topbar .containerish .social-link {
+      color: #fff;
+      margin-right: 0.5rem; }
+      .topbar .containerish .social-link:hover {
+        color: #413f44;
+        text-decoration: none; }
+      .topbar .containerish .social-link p {
+        display: inline-block;
+        line-height: 0;
+        margin: 0;
+        margin-left: 0.2rem; }
+    .topbar .containerish .social-link:last-child {
+      margin-right: 0 !important; }
+    .topbar .containerish .col-left {
+      grid-row: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .topbar .containerish .col-mid {
+      display: none; }
+    .topbar .containerish .col-right {
+      grid-row: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .topbar .containerish .topbar-link {
+      margin-right: 1rem;
+      display: none; }
+    .topbar .containerish .topbar-link:last-child {
+      margin-right: 0 !important;
+      display: inline-block; }
+
+/* -------------------------------------------------------------------------- */
+/* NAVBAR */
+/* -------------------------------------------------------------------------- */
+.navbar-wrapper {
+  background: #fff;
+  position: relative; }
+
+.navbar .nav-logo {
+  max-width: 250px;
+  margin-top: 2px; }
+
+.nav-item {
+  margin-right: 0.7rem; }
+  .nav-item .nav-link {
+    font-family: "Quicksand", sans-serif !important;
+    color: #413f44 !important;
+    font-size: 0.875rem;
+    font-style: normal; }
+    .nav-item .nav-link:hover {
+      color: #b1945f !important; }
+
+.nav-item .nav-link:last-child {
+  padding-right: 0;
+  padding-left: 0; }
+
+.nav-item.nav-divider {
+  position: relative; }
+  .nav-item.nav-divider::after {
+    content: "•";
+    color: #b1945f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.4; }
+
+.nav-item:last-child {
+  margin-right: 0 !important; }
+  .nav-item:last-child .nav-link {
+    margin-right: 0; }
+
+.dropdown-menu {
+  background-color: #f5f5f4;
+  border-color: transparent;
+  margin-top: 0 !important; }
+  .dropdown-menu .dropdown-item {
+    color: #413f44;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400; }
+    .dropdown-menu .dropdown-item:hover {
+      background-color: transparent;
+      color: #b1945f; }
+    .dropdown-menu .dropdown-item:focus {
+      background: transparent; }
+
+.dropdown-toggle::after {
+  border: none !important;
+  margin-left: 0 !important; }
+
+/* -------------------------------------------------------------------------- */
+/* BUTTON STYLES */
+/* -------------------------------------------------------------------------- */
+.ui-btn {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  line-height: 0.9375rem;
+  padding: 0.6rem 0rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out; }
+
+.ui-btn-main {
+  background-color: #b1945f;
+  border: 1px solid #b1945f;
+  color: #fff; }
+  .ui-btn-main:hover {
+    color: #fff;
+    border: 1px solid #c2ab81;
+    background-color: #c2ab81;
+    text-decoration: none; }
+
+.ui-btn-main-ol {
+  background-color: transparent;
+  border: 1px solid #b1945f;
+  color: #b1945f; }
+  .ui-btn-main-ol:hover {
+    color: #f5f5f4;
+    border: 1px solid #c2ab81;
+    background-color: #c2ab81;
+    text-decoration: none; }
+
+.ui-btn-light {
+  background-color: #f5f5f4;
+  border: 1px solid #f5f5f4;
+  color: #413f44; }
+  .ui-btn-light:hover {
+    color: #413f44;
+    background-color: #d1d1cc;
+    border: 1px solid #d1d1cc;
+    text-decoration: none; }
+
+.ui-btn-light-accent {
+  background-color: #808280;
+  border: 1px solid #808280;
+  color: #fff; }
+  .ui-btn-light-accent:hover {
+    color: #fff;
+    background-color: #a7a8a7;
+    border: 1px solid #a7a8a7;
+    text-decoration: none; }
+
+.ui-btn-dark-accent {
+  background-color: #6f6f74;
+  border: 1px solid #6f6f74;
+  color: #fff; }
+  .ui-btn-dark-accent:hover {
+    color: #fff;
+    background-color: #95959a;
+    border: 1px solid #95959a;
+    text-decoration: none; }
+
+.ui-btn-extra-light-accent {
+  background-color: #f5f5f4;
+  border: 1px solid #f5f5f4;
+  color: #fff; }
+  .ui-btn-extra-light-accent:hover {
+    color: #fff;
+    background-color: #f5f5f4;
+    border: 1px solid #f5f5f4;
+    text-decoration: none; }
+
+.ui-btn-dark {
+  background-color: #413f44;
+  border: 1px solid #413f44;
+  color: #fff; }
+  .ui-btn-dark:hover {
+    color: #fff;
+    background-color: #67646c;
+    border: 1px solid #67646c;
+    text-decoration: none; }
+
+.ui-btn-light-ol {
+  background-color: transparent;
+  border: 1px solid #f5f5f4;
+  color: #f5f5f4; }
+  .ui-btn-light-ol:hover {
+    color: #413f44;
+    background-color: rgba(245, 245, 244, 0.5);
+    border: 1px solid rgba(245, 245, 244, 0.5);
+    text-decoration: none; }
+
+.ui-btn-white {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #b1945f; }
+  .ui-btn-white:hover {
+    color: #b1945f;
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    text-decoration: none; }
+
+.ui-btn-white-ol {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff; }
+  .ui-btn-white-ol:hover {
+    color: #413f44;
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    text-decoration: none; }
+
+.ui-btn-group .ui-btn:not(:last-child) {
+  margin-right: 0.85rem; }
+
+/* -------------------------------------------------------------------------- */
+/* LINKS - SITEWIDE */
+/* -------------------------------------------------------------------------- */
+.gen-link-light {
+  color: #b1945f; }
+  .gen-link-light:hover {
+    color: #413f44; }
+
+/* -------------------------------------------------------------------------- */
+/* IMAGE STYLES */
+/* -------------------------------------------------------------------------- */
+.img-border {
+  border: 3px solid #fff; }
+
+.img-shadow {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.08); }
+
+.img-round {
+  border-radius: 10px; }
+
+/* -------------------------------------------------------------------------- */
+/* SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+.containerish {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  padding: 0; }
+
+section {
+  overflow: hidden; }
+
+/* -------------------------------------------------------------------------- */
+/* HERO SECTION */
+/* -------------------------------------------------------------------------- */
+.hero {
+  overflow: hidden;
+  position: relative; }
+
+/* -------------------------------------------------------------------------- */
+/* SEARCH SECTION */
+/* -------------------------------------------------------------------------- */
+.search {
+  background: #f5f5f4;
+  padding: 40px 20px; }
+  .search .containerish {
+    display: grid; }
+    .search .containerish .form-control {
+      border-radius: 0;
+      margin-bottom: 0.5rem; }
+    .search .containerish .form-control:not(button) {
+      border: 1px solid #ededed; }
+    .search .containerish ::placeholder {
+      color: #3e3a42;
+      font-family: "Quicksand", sans-serif;
+      font-size: 15px; }
+
+/* -------------------------------------------------------------------------- */
+/* BOTOX AND FILLERS SECTION */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* ABOUT US */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* NEWSLETTER SECTION */
+/* -------------------------------------------------------------------------- */
+.newsletter {
+  min-height: 200px;
+  align-items: center; }
+  .newsletter .containerish {
+    padding: 40px 20px;
+    background: url("../img/newsletter-bg@2x.jpg") center/cover;
+    display: grid; }
+    .newsletter .containerish h3,
+    .newsletter .containerish h2,
+    .newsletter .containerish p {
+      text-align: center; }
+    .newsletter .containerish p {
+      margin-top: 0.5rem; }
+    .newsletter .containerish .form-control {
+      margin-bottom: 0.5rem;
+      border-radius: 0; }
+    .newsletter .containerish .form-control:last-child {
+      margin-bottom: 0; }
+
+/* -------------------------------------------------------------------------- */
+/* LASER HAIR REMOVAL AND ELECTROLYSIS */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* FACIALS SECTION */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* KYBELLA SECTION */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* EVENT */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* APPOINTMENTS SECTION */
+/* -------------------------------------------------------------------------- */
+.appointments {
+  background: url("../img/appointment-bg@2x.jpg") center/cover;
+  min-height: 400px;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .appointments .form-control {
+    border-radius: 0; }
+
+/* -------------------------------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* FOOTER 1 SECTION */
+/* -------------------------------------------------------------------------- */
+.footer1 {
+  min-height: 300px;
+  padding: 40px 10px;
+  background: url("../img/footer-1-bg@2x.jpg") center/cover;
+  position: relative; }
+  .footer1 .footer-link {
+    color: #413f44;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px; }
+    .footer1 .footer-link:hover {
+      text-decoration: none;
+      color: #6f6f74; }
+  .footer1 .blogimg {
+    width: 100%;
+    max-width: 175px;
+    height: auto;
+    display: block; }
+  .footer1 .ui-btn {
+    display: block;
+    width: auto !important;
+    max-width: 150px;
+    padding: 0.8rem 1.4rem; }
+  .footer1 #navlinks .footer-link:not(:last-child) {
+    line-height: 30px; }
+  .footer1 .footer-header {
+    margin-top: 0 !important; }
+
+/* -------------------------------------------------------------------------- */
+/* FOOTER 2 SECTION */
+/* -------------------------------------------------------------------------- */
+.footer2 {
+  background-color: #6f6f74;
+  width: 100%;
+  padding: 0.6rem 30px; }
+  .footer2 .footer-link {
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300; }
+    .footer2 .footer-link:hover {
+      text-decoration: none;
+      color: #413f44; }
+
+/* -------------------------------------------------------------------------- */
+/* ANIMATION STYLES */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* WORDPRESS STYLES */
+/* -------------------------------------------------------------------------- */
+.breadcrumbs {
+  background: #413f44;
+  font-family: "Quicksand", sans-serif; }
+  .breadcrumbs a {
+    color: #808280; }
+    .breadcrumbs a:hover {
+      color: #f5f5f4; }
+  .breadcrumbs .current {
+    color: #f5f5f4; }
+
+.shareme {
+  font-family: "Quicksand", sans-serif; }
+  .shareme a {
+    color: #b1945f; }
+    .shareme a:hover {
+      color: #413f44; }
+
+.inner-bg {
+  background: url("../img/inner-bg@2x.jpg");
+  background-position: center;
+  background-size: cover; }
+
+/* -------------------------------------------------------------------------- */
+/* BANNER STYLES */
+/* -------------------------------------------------------------------------- */
+.banner-bg {
+  height: 400px;
+  width: 100%; }
+
+.archive-title {
+  font-variant-caps: initial; }
+
+.banner {
+  background-color: #b1945f; }
+
+#banner-img-wrap {
+  height: 300px;
+  width: 100%;
+  overflow: hidden; }
+  #banner-img-wrap #banner-img {
+    width: 100%;
+    height: auto; }
+
+/* -------------------------------------------------------------------------- */
+/* POST SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+#postsection {
+  padding: 40px 10px; }
+  #postsection h1 {
+    color: #413f44;
+    font-family: "Quicksand", sans-serif;
+    font-size: 3.125rem;
+    /* 50px */
+    line-height: 3rem;
+    font-weight: 300;
+    font-style: normal; }
+  #postsection h2,
+  #postsection h3,
+  #postsection h4,
+  #postsection h5,
+  #postsection h6 {
+    color: #b1945f;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2.1875rem;
+    /* 35px */
+    line-height: 2.1875rem;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 1rem; }
+  #postsection p {
+    font-weight: 300; }
+  @media screen and (min-width: 768px) {
+    #postsection {
+      padding: 80px 10px; } }
+
+/* -------------------------------------------------------------------------- */
+/* PAGE SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+.pagesection h2,
+.pagesection h3,
+.pagesection h4 {
+  color: #b1945f; }
+
+.pagesection p:not(a) {
+  font-weight: 300;
+  margin-bottom: 1rem; }
+
+.pagesection p:last-child {
+  margin-bottom: 0; }
+
+.pagesection a:not(.ui-btn) {
+  color: #b1945f; }
+
+.pagesection .map-full {
+  width: 100%;
+  height: 400px; }
+
+.sec-1,
+.sec-2,
+.sec-3,
+.sec-5,
+.sec-5 {
+  min-height: 400px !important;
+  padding: 4rem 10px !important; }
+
+/* -------------------------------------------------------------------------- */
+/* SECTION IMAGE STYLES */
+/* -------------------------------------------------------------------------- */
+img {
+  width: 100%;
+  height: auto; }
+
+/* -------------------------------------------------------------------------- */
+/* SVG Color: Topbar, footer and share */
+/* -------------------------------------------------------------------------- */
+.icons-topbar {
+  width: 14px;
+  height: 16px; }
+  .icons-topbar path {
+    fill: #413f44; }
+
+.icons-topbar:hover path {
+  fill: #f5f5f4; }
+
+.social-link-footer {
+  width: 13.13px;
+  height: 15px; }
+  .social-link-footer path {
+    fill: #f5f5f4; }
+
+.social-link-footer:hover path {
+  fill: #808280; }
+
+.social-link-share {
+  width: 14px;
+  height: 16px; }
+  .social-link-share path {
+    fill: #b1945f; }
+
+.social-link-share:hover path {
+  fill: #413f44; }
+
+.breadcrum-home {
+  width: 16px;
+  height: 14px; }
+  .breadcrum-home path {
+    fill: #808280; }
+
+.breadcrum-home:hover path {
+  fill: #f5f5f4; }
+
+.icon-close {
+  width: 30px;
+  height: 30px;
+  cursor: pointer; }
+  .icon-close path {
+    fill: #fff; }
+
+/* -------------------------------------------------------------------------- */
+/* Search Page*/
+/* -------------------------------------------------------------------------- */
+#open-search {
+  padding-right: 19px; }
+
+#search-overlay {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999999;
+  padding: 170px 60px 0;
+  position: fixed;
+  top: 0; }
+  #search-overlay em {
+    display: block;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 30px;
+    color: #000; }
+  #search-overlay a {
+    color: #000;
+    font-weight: 700; }
+  #search-overlay .form-control::-webkit-input-placeholder {
+    color: #fff; }
+  #search-overlay .form-control::-moz-placeholder {
+    color: #fff;
+    opacity: 1; }
+  #search-overlay .form-control:-ms-input-placeholder {
+    color: #fff; }
+  #search-overlay .form-control:-moz-placeholder {
+    color: #fff;
+    opacity: 1; }
+
+.search-results em {
+  display: block;
+  text-align: center;
+  font-size: 120%;
+  margin-bottom: 60px; }
+
+/* -------------------------------------------------------------------------- */
+/* Pagination */
+/* -------------------------------------------------------------------------- */
+.pagination {
+  display: table !important;
+  color: #5c89a9; }
+  .pagination a {
+    margin-right: 2rem;
+    color: #a19991; }
+  .pagination a:hover {
+    color: #2b2b2b; }
+  .pagination .current {
+    margin-right: 2rem;
+    color: #a19991; }
+  .pagination .dots {
+    flex: inherit;
+    margin-right: 2rem; }
+
+/* -------------------------------------------------------------------------- */
+/* Form Error Box */
+/* -------------------------------------------------------------------------- */
+.alert-info {
+  width: 320px;
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: #ff0000;
+  border-color: #bee5eb; }
+  .alert-info ul {
+    padding: 0;
+    margin: 0; }
+    .alert-info ul li {
+      list-style: none;
+      padding: 0; }
+
+/* -------------------------------------------------------------------------- */
+/* RESPONSIVE MEDIA QUERIES */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* SMALL BREAKPOINT (Landscape Phones and Up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 576px) {
+  .ui-btn {
+    display: inline-flex;
+    width: auto;
+    padding: 0.8rem 0.5rem; } }
+
+/* -------------------------------------------------------------------------- */
+/* MEDIUM BREAKPOINT (Tablets 768px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .ui-btn {
+    display: inline-flex;
+    width: 220px; }
+  /* TOPBAR ******************************************************* */
+  .topbar .containerish {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.2rem 0.5rem; }
+    .topbar .containerish .col-left {
+      grid-row: 1;
+      grid-column: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .topbar .containerish .col-mid {
+      display: none; }
+    .topbar .containerish .col-right {
+      grid-row: 1;
+      grid-column: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+  /* HERO ********************************************************* */
+  /* SEARCH ******************************************************* */
+  .search {
+    background: #f5f5f4;
+    padding: 40px 20px; }
+    .search .containerish {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-column-gap: 1rem; }
+      .search .containerish .form-control {
+        border-radius: 0;
+        margin-bottom: 0.5rem; }
+      .search .containerish .form-control:not(button) {
+        border: 1px solid #ededed; }
+      .search .containerish ::placeholder {
+        color: #3e3a42;
+        font-family: "Quicksand", sans-serif;
+        font-size: 15px; }
+  /* BOTOX AND FILLERS ******************************************** */
+  /* ABOUT US ***************************************************** */
+  /* NEWSLETTER *************************************************** */
+  .newsletter {
+    align-items: center; }
+    .newsletter .containerish {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap: 1rem; }
+      .newsletter .containerish h3,
+      .newsletter .containerish h2 {
+        text-align: center; }
+      .newsletter .containerish h2 {
+        grid-column: 1 / -1;
+        grid-row: 1; }
+      .newsletter .containerish p.body-copy {
+        grid-row: 2;
+        grid-column: 1 / -1;
+        text-align: center; }
+      .newsletter .containerish input[type="text"] {
+        grid-row: 3;
+        grid-column: 1 / 2; }
+      .newsletter .containerish input[type="email"] {
+        grid-row: 3;
+        grid-column: 2 / 3; }
+      .newsletter .containerish button {
+        grid-row: 3;
+        grid-column: 3 / 3;
+        width: 100% !important; }
+      .newsletter .containerish .form-control {
+        margin-bottom: 0.5rem;
+        border-radius: 0; }
+      .newsletter .containerish .form-control:last-child {
+        margin-bottom: 0; }
+  /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  /* FACIALS ****************************************************** */
+  /* KYBELLA ****************************************************** */
+  /* EVENT ******************************************************** */
+  /* APPOINTMENTS ************************************************* */
+  .appointments {
+    background: url("../img/appointment-bg@2x.jpg") center/cover;
+    min-height: 400px;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .appointments .form-control {
+      border-radius: 0; }
+  /* FOOTER ******************************************************* */ }
+
+/* -------------------------------------------------------------------------- */
+/* LARGE BREAKPOINT (Desktops 992px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 992px) {
+  .ui-btn {
+    display: inline-flex;
+    width: auto;
+    padding: 0.8rem 0.5rem;
+    width: 225px; }
+  .dropdown:hover > .dropdown-menu {
+    display: block; }
+  .containerish {
+    max-width: 95%;
+    margin: 0 auto; }
+  /* TOPBAR ******************************************************* */
+  /* HERO ********************************************************* */
+  /* SEARCH ******************************************************* */
+  /* BOTOX AND FILLERS ******************************************** */
+  /* ABOUT US ***************************************************** */
+  /* NEWSLETTER *************************************************** */
+  /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  /* FACIALS ****************************************************** */
+  /* KYBELLA ****************************************************** */
+  /* EVENT ******************************************************** */
+  /* APPOINTMENTS ************************************************* */
+  /* FOOTER ******************************************************* */ }
+
+/* -------------------------------------------------------------------------- */
+/* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  /* TOPBAR ******************************************************* */
+  /* HERO ********************************************************* */
+  /* SEARCH ******************************************************* */
+  /* BOTOX AND FILLERS ******************************************** */
+  /* ABOUT US ***************************************************** */
+  /* NEWSLETTER *************************************************** */
+  /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  /* FACIALS ****************************************************** */
+  /* KYBELLA ****************************************************** */
+  /* EVENT ******************************************************** */
+  /* APPOINTMENTS ************************************************* */
+  /* FOOTER ******************************************************* */ }
+
+/* -------------------------------------------------------------------------- */
+/* MACBOOK PRO 15" BREAKPOINT (Large Desktops 1400px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1400px) {
+  /* TOPBAR ******************************************************* */
+  /* HERO ********************************************************* */
+  /* SEARCH ******************************************************* */
+  /* BOTOX AND FILLERS ******************************************** */
+  /* ABOUT US ***************************************************** */
+  /* NEWSLETTER *************************************************** */
+  /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  /* FACIALS ****************************************************** */
+  /* KYBELLA ****************************************************** */
+  /* EVENT ******************************************************** */
+  /* APPOINTMENTS ************************************************* */
+  /* FOOTER ******************************************************* */ }
+
+/* -------------------------------------------------------------------------- */
+/* SUPER LARGE BREAKPOINT (IMAC STATUS 1900px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1900px) {
+  /* TOPBAR ******************************************************* */
+  /* HERO ********************************************************* */
+  /* SEARCH ******************************************************* */
+  /* BOTOX AND FILLERS ******************************************** */
+  /* ABOUT US ***************************************************** */
+  /* NEWSLETTER *************************************************** */
+  /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  /* FACIALS ****************************************************** */
+  /* KYBELLA ****************************************************** */
+  /* EVENT ******************************************************** */
+  /* APPOINTMENTS ************************************************* */
+  /* FOOTER ******************************************************* */ }
