@@ -98,8 +98,8 @@ h6 {
 
 /* Footer2 Text */
 .small-copy, .topbar .containerish .topbar-link {
-  font-size: 1.125rem;
-  line-height: 22.5px;
+  font-size: 13px;
+  line-height: 13px;
   font-family: "Quicksand", sans-serif;
   font-weight: 400; }
   .small-copy.is-semibold, .topbar .containerish .is-semibold.topbar-link {
@@ -157,7 +157,7 @@ header {
   width: 100%;
   height: 30px;
   height: auto;
-  background-color: #6f6f74; }
+  background-color: #808280; }
   .topbar .containerish {
     display: grid;
     grid-template-rows: auto;
@@ -186,8 +186,6 @@ header {
       display: flex;
       align-items: center;
       justify-content: center; }
-    .topbar .containerish .col-mid {
-      display: none; }
     .topbar .containerish .col-right {
       grid-row: 2;
       display: flex;
@@ -208,8 +206,7 @@ header {
   position: relative; }
 
 .navbar .nav-logo {
-  max-width: 250px;
-  margin-top: 2px; }
+  max-width: 150px; }
 
 .nav-item {
   margin-right: 0.7rem; }
@@ -804,6 +801,7 @@ img {
     width: 220px; }
   /* TOPBAR ******************************************************* */
   .topbar .containerish {
+    max-width: 100% !important;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
@@ -813,9 +811,7 @@ img {
       grid-column: 1;
       display: flex;
       align-items: center;
-      justify-content: center; }
-    .topbar .containerish .col-mid {
-      display: none; }
+      justify-content: flex-start; }
     .topbar .containerish .col-right {
       grid-row: 1;
       grid-column: 2;
@@ -906,6 +902,29 @@ img {
     max-width: 95%;
     margin: 0 auto; }
   /* TOPBAR ******************************************************* */
+  .topbar .containerish {
+    max-width: 100% !important;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: max-content 1fr max-content;
+    padding: 0.2rem 1rem; }
+    .topbar .containerish .col-left {
+      grid-row: 1;
+      grid-column: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+    .topbar .containerish .col-mid {
+      grid-column: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .topbar .containerish .col-right {
+      grid-row: 1;
+      grid-column: 3;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
   /* HERO ********************************************************* */
   /* SEARCH ******************************************************* */
   /* BOTOX AND FILLERS ******************************************** */

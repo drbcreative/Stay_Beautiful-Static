@@ -15,7 +15,7 @@ header {
   height: 30px;
   height: auto;
   // padding: .3rem 0;
-  background-color: $color-dark-accent;
+  background-color: $color-light-accent;
 
   .containerish {
     display: grid;
@@ -57,9 +57,9 @@ header {
       align-items: center;
       justify-content: center;
     }
-    .col-mid {
-      display: none;
-    }
+    // .col-mid {
+    //   display: none;
+    // }
     .col-right {
       grid-row: 2;
       display: flex;
@@ -89,8 +89,8 @@ header {
 
 .navbar {
   .nav-logo {
-    max-width: 250px;
-    margin-top: 2px;
+    max-width: 150px;
+    // margin-top: 18px;
   }
 }
 
