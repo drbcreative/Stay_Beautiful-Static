@@ -495,6 +495,13 @@ section {
 /* -------------------------------------------------------------------------- */
 /* LASER HAIR REMOVAL AND ELECTROLYSIS */
 /* -------------------------------------------------------------------------- */
+.lhr-electrolysis {
+  padding: 40px 20px;
+  background: url("../../img/electrolysis-bg@2x.jpg") center/cover;
+  min-height: 200px; }
+  .lhr-electrolysis .containerish {
+    display: grid; }
+
 /* -------------------------------------------------------------------------- */
 /* FACIALS SECTION */
 /* -------------------------------------------------------------------------- */
@@ -929,6 +936,9 @@ img {
       .newsletter .containerish .form-control:last-child {
         margin-bottom: 0; }
   /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  .lhr-electrolysis .containerish {
+    display: grid;
+    max-width: 65%; }
   /* FACIALS ****************************************************** */
   /* KYBELLA ****************************************************** */
   /* EVENT ******************************************************** */
@@ -1037,6 +1047,15 @@ img {
       display: grid;
       grid-template-columns: 2fr 2fr 1fr; }
   /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  .lhr-electrolysis {
+    padding: 40px 20px;
+    background: url("../../img/electrolysis-bg@2x.jpg") center/cover;
+    min-height: 200px; }
+    .lhr-electrolysis .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 1rem;
+      max-width: 1200px; }
   /* FACIALS ****************************************************** */
   /* KYBELLA ****************************************************** */
   /* EVENT ******************************************************** */
@@ -1093,7 +1112,7 @@ img {
         right: -50px; }
   /* ABOUT US ***************************************************** */
   .aboutus {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background: url("../../img/aboutus-bg@2x.jpg") center/cover;
     min-height: 200px; }
     .aboutus .section-info {
@@ -1101,6 +1120,15 @@ img {
       margin: 0 auto; }
   /* NEWSLETTER *************************************************** */
   /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  .lhr-electrolysis {
+    padding: 60px 20px;
+    background: url("../../img/electrolysis-bg@2x.jpg") center/cover;
+    min-height: 200px; }
+    .lhr-electrolysis .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 4rem;
+      max-width: 1200px; }
   /* FACIALS ****************************************************** */
   /* KYBELLA ****************************************************** */
   /* EVENT ******************************************************** */

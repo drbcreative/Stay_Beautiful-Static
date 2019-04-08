@@ -162,6 +162,12 @@
     }
   }
   /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  .lhr-electrolysis {
+    .containerish {
+      display: grid;
+      max-width: 65%;
+    }
+  }
   /* FACIALS ****************************************************** */
   /* KYBELLA ****************************************************** */
   /* EVENT ******************************************************** */
@@ -309,6 +315,18 @@
     }
   }
   /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  .lhr-electrolysis {
+    padding: 40px 20px;
+    background: url("../../img/electrolysis-bg@2x.jpg") center / cover;
+    min-height: 200px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 1rem;
+      max-width: 1200px;
+    }
+  }
   /* FACIALS ****************************************************** */
   /* KYBELLA ****************************************************** */
   /* EVENT ******************************************************** */
@@ -390,7 +408,7 @@
   }
   /* ABOUT US ***************************************************** */
   .aboutus {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background: url("../../img/aboutus-bg@2x.jpg") center / cover;
     min-height: 200px;
 
@@ -401,6 +419,18 @@
   }
   /* NEWSLETTER *************************************************** */
   /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
+  .lhr-electrolysis {
+    padding: 60px 20px;
+    background: url("../../img/electrolysis-bg@2x.jpg") center / cover;
+    min-height: 200px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 4rem;
+      max-width: 1200px;
+    }
+  }
   /* FACIALS ****************************************************** */
   /* KYBELLA ****************************************************** */
   /* EVENT ******************************************************** */
