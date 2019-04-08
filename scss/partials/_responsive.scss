@@ -263,6 +263,30 @@
     }
   }
   /* BOTOX AND FILLERS ******************************************** */
+  .botox-fillers {
+    overflow: hidden;
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+
+      .section-info {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        max-width: 580px !important;
+      }
+
+      img {
+        grid-column: 2 / 4;
+        grid-row: 1;
+        position: relative;
+        width: 700px !important;
+        max-width: 700px !important;
+        right: -50px;
+      }
+    }
+  }
   /* ABOUT US ***************************************************** */
   /* NEWSLETTER *************************************************** */
   /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
@@ -322,6 +346,29 @@
   }
   /* SEARCH ******************************************************* */
   /* BOTOX AND FILLERS ******************************************** */
+  .botox-fillers {
+    overflow: hidden;
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+
+      .section-info {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        max-width: 580px;
+      }
+
+      img {
+        grid-column: 2 / 4;
+        grid-row: 1;
+        position: relative;
+        width: 700px;
+        right: 0;
+      }
+    }
+  }
   /* ABOUT US ***************************************************** */
   /* NEWSLETTER *************************************************** */
   /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */

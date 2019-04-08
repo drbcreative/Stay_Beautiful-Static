@@ -53,6 +53,25 @@ section {
 /* -------------------------------------------------------------------------- */
 /* BOTOX AND FILLERS SECTION */
 /* -------------------------------------------------------------------------- */
+.botox-fillers {
+  padding: 40px 20px 0 20px;
+  background: url("../../img/botox-bg@2x.jpg") center / cover;
+  .containerish {
+    display: grid;
+
+    .section-info {
+      margin-bottom: 2rem;
+      max-width: 65%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      max-width: 65%;
+      margin: 0 auto;
+    }
+  }
+}
 /* -------------------------------------------------------------------------- */
 /* ABOUT US */
 /* -------------------------------------------------------------------------- */
