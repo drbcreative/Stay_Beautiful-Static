@@ -185,7 +185,19 @@ section {
   align-items: center;
   justify-content: center;
 
+  h2,
+  p {
+    margin: 0 !important;
+  }
+  p {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
   .form-control {
     border-radius: 0;
+  }
+  input {
+    height: 43px;
   }
 }

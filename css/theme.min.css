@@ -552,8 +552,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .appointments h2,
+  .appointments p {
+    margin: 0 !important; }
+  .appointments p {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1rem !important; }
   .appointments .form-control {
     border-radius: 0; }
+  .appointments input {
+    height: 43px; }
 
 /* -------------------------------------------------------------------------- */
 /* FOOTER */
