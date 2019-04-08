@@ -15,8 +15,13 @@ section {
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
 .hero {
+  background: url("../../img/hero-bg@2x.jpg") center right / cover;
+  min-height: 65vh;
   overflow: hidden;
   position: relative;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
 }
 
 /* -------------------------------------------------------------------------- */

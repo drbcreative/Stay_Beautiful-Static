@@ -19,7 +19,7 @@
 @media screen and (min-width: 768px) {
   .ui-btn {
     display: inline-flex;
-    width: 220px;
+    min-width: 220px;
   }
   /* TOPBAR ******************************************************* */
   .topbar {
@@ -50,6 +50,26 @@
     }
   }
   /* HERO ********************************************************* */
+  .hero {
+    background: url("../../img/hero-bg@2x.jpg") center / cover;
+    min-height: 55vh;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+
+      .section-info {
+        grid-column: 2;
+        background: rgba($color-light, 0.8);
+        padding: 2rem;
+      }
+    }
+  }
   /* SEARCH ******************************************************* */
   .search {
     background: $color-light;
@@ -192,6 +212,30 @@
     }
   }
   /* HERO ********************************************************* */
+  .hero {
+    background: url("../../img/hero-bg@2x.jpg") center / cover;
+    min-height: 55vh;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+
+      .section-info {
+        grid-column: 2;
+        background: transparent;
+        padding: 0;
+
+        p {
+          max-width: 490px;
+        }
+      }
+    }
+  }
   /* SEARCH ******************************************************* */
   /* BOTOX AND FILLERS ******************************************** */
   /* ABOUT US ***************************************************** */
@@ -231,6 +275,26 @@
     }
   }
   /* HERO ********************************************************* */
+  .hero {
+    background: url("../../img/hero-bg@2x.jpg") center / cover;
+    min-height: 574px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .section-info {
+        grid-column: 2;
+        background: transparent;
+        padding: 0;
+        justify-self: center;
+
+        p {
+          max-width: 490px;
+        }
+      }
+    }
+  }
   /* SEARCH ******************************************************* */
   /* BOTOX AND FILLERS ******************************************** */
   /* ABOUT US ***************************************************** */
