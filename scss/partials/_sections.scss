@@ -61,7 +61,6 @@ section {
 
     .section-info {
       margin-bottom: 2rem;
-      max-width: 65%;
       margin: 0 auto;
       margin-bottom: 2rem;
     }
@@ -75,6 +74,16 @@ section {
 /* -------------------------------------------------------------------------- */
 /* ABOUT US */
 /* -------------------------------------------------------------------------- */
+.aboutus {
+  padding: 40px 20px;
+  background: url("../../img/aboutus-bg@2x.jpg") center / cover;
+  min-height: 200px;
+
+  .section-info {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* NEWSLETTER SECTION */
