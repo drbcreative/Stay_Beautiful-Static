@@ -202,8 +202,11 @@ header {
 /* NAVBAR */
 /* -------------------------------------------------------------------------- */
 .navbar-wrapper {
-  background: #fff;
+  background: url("../../img/nav-bg@2x.jpg") center/cover;
   position: relative; }
+  .navbar-wrapper .containerish {
+    max-width: 100%;
+    padding: 0 1rem; }
 
 .navbar .nav-logo {
   max-width: 150px; }
@@ -231,7 +234,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.4; }
+    opacity: 1; }
 
 .nav-item:last-child {
   margin-right: 0 !important; }
@@ -942,8 +945,16 @@ img {
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
   /* TOPBAR ******************************************************* */
-  .topbar .containerish .topbar-link {
-    display: inline-flex; }
+  .topbar .containerish {
+    padding: 0.2rem 2rem; }
+    .topbar .containerish .topbar-link {
+      display: inline-flex; }
+  /* NAVBAR ******************************************************* */
+  .navbar-wrapper .containerish {
+    padding: 0 2rem; }
+  .navbar .nav-logo {
+    max-width: 200px;
+    margin-top: 18px; }
   /* HERO ********************************************************* */
   /* SEARCH ******************************************************* */
   /* BOTOX AND FILLERS ******************************************** */

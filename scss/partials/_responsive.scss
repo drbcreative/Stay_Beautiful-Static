@@ -215,6 +215,19 @@
         // margin-right: 1rem;
         display: inline-flex;
       }
+      padding: 0.2rem 2rem;
+    }
+  }
+  /* NAVBAR ******************************************************* */
+  .navbar-wrapper {
+    .containerish {
+      padding: 0 2rem;
+    }
+  }
+  .navbar {
+    .nav-logo {
+      max-width: 200px;
+      margin-top: 18px;
     }
   }
   /* HERO ********************************************************* */

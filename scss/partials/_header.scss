@@ -82,9 +82,13 @@ header {
 /* NAVBAR */
 /* -------------------------------------------------------------------------- */
 .navbar-wrapper {
-  background: $color-white;
+  background: url("../../img/nav-bg@2x.jpg") center / cover;
   position: relative;
-  // z-index: 10;
+
+  .containerish {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 }
 
 .navbar {
@@ -125,7 +129,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.4;
+    opacity: 1;
   }
 }
 
