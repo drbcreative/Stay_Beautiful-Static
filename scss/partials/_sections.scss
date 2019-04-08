@@ -148,6 +148,32 @@ section {
 /* -------------------------------------------------------------------------- */
 /* EVENT */
 /* -------------------------------------------------------------------------- */
+.event {
+  .event-top {
+    background: url("../../img/event-bg@2x.jpg") center / cover;
+    min-height: 100px;
+    padding: 40px 20px 0 20px;
+    .containerish {
+      display: grid;
+    }
+  }
+  .event-bottom {
+    background: $color-white;
+    min-height: 100px;
+    padding: 0px 20px 40px 20px;
+    .containerish {
+      display: grid;
+      .section-info {
+        background: $color-light;
+        padding: 1rem;
+
+        .lead-copy {
+          font-weight: 500 !important;
+        }
+      }
+    }
+  }
+}
 /* -------------------------------------------------------------------------- */
 /* APPOINTMENTS SECTION */
 /* -------------------------------------------------------------------------- */

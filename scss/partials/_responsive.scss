@@ -188,6 +188,27 @@
     }
   }
   /* EVENT ******************************************************** */
+  .event {
+    .event-top {
+      min-height: 100px;
+      padding: 40px 20px 0 20px;
+      .containerish {
+        max-width: 760px !important;
+        display: grid;
+      }
+    }
+    .event-bottom {
+      min-height: 100px;
+      padding: 0px 20px 40px 20px;
+      .containerish {
+        max-width: 760px !important;
+        display: grid;
+        .section-info {
+          padding: 2rem 1rem;
+        }
+      }
+    }
+  }
   /* APPOINTMENTS ************************************************* */
   .appointments {
     background: url("../img/appointment-bg@2x.jpg") center / cover;

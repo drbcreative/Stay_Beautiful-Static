@@ -523,6 +523,25 @@ section {
 /* -------------------------------------------------------------------------- */
 /* EVENT */
 /* -------------------------------------------------------------------------- */
+.event .event-top {
+  background: url("../../img/event-bg@2x.jpg") center/cover;
+  min-height: 100px;
+  padding: 40px 20px 0 20px; }
+  .event .event-top .containerish {
+    display: grid; }
+
+.event .event-bottom {
+  background: #fff;
+  min-height: 100px;
+  padding: 0px 20px 40px 20px; }
+  .event .event-bottom .containerish {
+    display: grid; }
+    .event .event-bottom .containerish .section-info {
+      background: #f5f5f4;
+      padding: 1rem; }
+      .event .event-bottom .containerish .section-info .lead-copy {
+        font-weight: 500 !important; }
+
 /* -------------------------------------------------------------------------- */
 /* APPOINTMENTS SECTION */
 /* -------------------------------------------------------------------------- */
@@ -966,6 +985,20 @@ img {
       max-width: 65%;
       display: grid; }
   /* EVENT ******************************************************** */
+  .event .event-top {
+    min-height: 100px;
+    padding: 40px 20px 0 20px; }
+    .event .event-top .containerish {
+      max-width: 760px !important;
+      display: grid; }
+  .event .event-bottom {
+    min-height: 100px;
+    padding: 0px 20px 40px 20px; }
+    .event .event-bottom .containerish {
+      max-width: 760px !important;
+      display: grid; }
+      .event .event-bottom .containerish .section-info {
+        padding: 2rem 1rem; }
   /* APPOINTMENTS ************************************************* */
   .appointments {
     background: url("../img/appointment-bg@2x.jpg") center/cover;
