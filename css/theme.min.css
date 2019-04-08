@@ -474,11 +474,11 @@ section {
 /* NEWSLETTER SECTION */
 /* -------------------------------------------------------------------------- */
 .newsletter {
+  background: url("../img/newsletter-bg@2x.jpg") center/cover;
   min-height: 200px;
   align-items: center; }
   .newsletter .containerish {
     padding: 40px 20px;
-    background: url("../img/newsletter-bg@2x.jpg") center/cover;
     display: grid; }
     .newsletter .containerish h3,
     .newsletter .containerish h2,
@@ -1031,6 +1031,11 @@ img {
         right: -50px; }
   /* ABOUT US ***************************************************** */
   /* NEWSLETTER *************************************************** */
+  .newsletter {
+    align-items: center; }
+    .newsletter .containerish {
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr; }
   /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
   /* FACIALS ****************************************************** */
   /* KYBELLA ****************************************************** */

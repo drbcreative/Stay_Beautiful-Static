@@ -89,11 +89,11 @@ section {
 /* NEWSLETTER SECTION */
 /* -------------------------------------------------------------------------- */
 .newsletter {
+  background: url("../img/newsletter-bg@2x.jpg") center / cover;
   min-height: 200px;
   align-items: center;
   .containerish {
     padding: 40px 20px;
-    background: url("../img/newsletter-bg@2x.jpg") center / cover;
     display: grid;
     h3,
     h2,

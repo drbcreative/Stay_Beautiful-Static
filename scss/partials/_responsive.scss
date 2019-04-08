@@ -300,6 +300,14 @@
   }
   /* ABOUT US ***************************************************** */
   /* NEWSLETTER *************************************************** */
+  .newsletter {
+    align-items: center;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr;
+    }
+  }
   /* LASER HAIR REMOVAL AND ELECTROLYSIS ************************** */
   /* FACIALS ****************************************************** */
   /* KYBELLA ****************************************************** */
