@@ -102,16 +102,15 @@
     background: url("../../img/botox-bg@2x.jpg") center / cover;
     .containerish {
       display: grid;
+      max-width: 65%;
 
       .section-info {
         margin-bottom: 2rem;
         margin: 0 auto;
         margin-bottom: 2rem;
-        max-width: 65%;
       }
 
       img {
-        max-width: 65%;
         margin: 0 auto;
       }
     }
@@ -169,6 +168,14 @@
     }
   }
   /* FACIALS ****************************************************** */
+  .facials {
+    padding: 0 20px 40px 20px;
+    background: url("../../img/facials-bg@2x.jpg") center / cover;
+    .containerish {
+      display: grid;
+      max-width: 65%;
+    }
+  }
   /* KYBELLA ****************************************************** */
   /* EVENT ******************************************************** */
   /* APPOINTMENTS ************************************************* */
@@ -282,12 +289,14 @@
   }
   /* BOTOX AND FILLERS ******************************************** */
   .botox-fillers {
+    padding: 0 20px;
     overflow: hidden;
     .containerish {
       display: grid;
       grid-template-columns: 1fr 100px 1fr;
       grid-template-rows: auto;
       align-items: center;
+      max-width: 1200px;
 
       .section-info {
         grid-column: 1 / 3;
@@ -298,9 +307,9 @@
         grid-column: 2 / 4;
         grid-row: 1;
         position: relative;
-        width: 700px !important;
+        width: 600px !important;
         max-width: 700px !important;
-        right: -50px;
+        right: -70px;
       }
     }
   }
@@ -328,6 +337,29 @@
     }
   }
   /* FACIALS ****************************************************** */
+  .facials {
+    padding: 0 20px;
+    background: url("../../img/facials-bg@2x.jpg") center / cover;
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      max-width: 1200px;
+      align-items: center;
+
+      img {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        width: 600px;
+        position: relative;
+        left: -100px;
+      }
+
+      .section-info {
+        grid-column: 2 / 4;
+        grid-row: 1;
+      }
+    }
+  }
   /* KYBELLA ****************************************************** */
   /* EVENT ******************************************************** */
   /* APPOINTMENTS ************************************************* */
@@ -432,6 +464,17 @@
     }
   }
   /* FACIALS ****************************************************** */
+  .facials {
+    .containerish {
+      img {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        width: 700px;
+        position: relative;
+        left: -100px;
+      }
+    }
+  }
   /* KYBELLA ****************************************************** */
   /* EVENT ******************************************************** */
   /* APPOINTMENTS ************************************************* */
