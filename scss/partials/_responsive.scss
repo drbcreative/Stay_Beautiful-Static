@@ -72,7 +72,7 @@
   }
   /* SEARCH ******************************************************* */
   .search {
-    background: $color-light;
+    background: $color-white;
     padding: 40px 20px;
 
     .containerish {
@@ -237,6 +237,31 @@
     }
   }
   /* SEARCH ******************************************************* */
+  .search {
+    background: $color-white;
+    padding: 40px 20px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      align-items: center;
+
+      .form-control {
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+
+      .form-control:not(button) {
+        border: 1px solid #ededed;
+      }
+
+      ::placeholder {
+        color: #3e3a42;
+        font-family: $font-primary;
+        font-size: 15px;
+      }
+    }
+  }
   /* BOTOX AND FILLERS ******************************************** */
   /* ABOUT US ***************************************************** */
   /* NEWSLETTER *************************************************** */

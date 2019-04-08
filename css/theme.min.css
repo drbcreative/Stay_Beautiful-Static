@@ -429,7 +429,7 @@ section {
 /* SEARCH SECTION */
 /* -------------------------------------------------------------------------- */
 .search {
-  background: #f5f5f4;
+  background: #fff;
   padding: 40px 20px; }
   .search .containerish {
     display: grid; }
@@ -844,7 +844,7 @@ img {
         padding: 2rem; }
   /* SEARCH ******************************************************* */
   .search {
-    background: #f5f5f4;
+    background: #fff;
     padding: 40px 20px; }
     .search .containerish {
       display: grid;
@@ -967,6 +967,22 @@ img {
         .hero .containerish .section-info p {
           max-width: 490px; }
   /* SEARCH ******************************************************* */
+  .search {
+    background: #fff;
+    padding: 40px 20px; }
+    .search .containerish {
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      align-items: center; }
+      .search .containerish .form-control {
+        border-radius: 0;
+        margin-bottom: 0; }
+      .search .containerish .form-control:not(button) {
+        border: 1px solid #ededed; }
+      .search .containerish ::placeholder {
+        color: #3e3a42;
+        font-family: "Quicksand", sans-serif;
+        font-size: 15px; }
   /* BOTOX AND FILLERS ******************************************** */
   /* ABOUT US ***************************************************** */
   /* NEWSLETTER *************************************************** */
