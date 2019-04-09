@@ -6,9 +6,6 @@
 /* -------------------------------------------------------------------------- */
 .footer1 {
   min-height: 300px;
-  padding: 40px 10px;
-  background: url("../img/footer-1-bg@2x.jpg") center / cover;
-  position: relative;
 
   .footer-link {
     color: $color-dark;
@@ -19,31 +16,55 @@
 
     &:hover {
       text-decoration: none;
-      color: $color-dark-accent;
-    }
-  }
-
-  .blogimg {
-    width: 100%;
-    max-width: 175px;
-    height: auto;
-    display: block;
-  }
-
-  .ui-btn {
-    display: block;
-    width: auto !important;
-    max-width: 150px;
-    padding: 0.8rem 1.4rem;
-  }
-
-  #navlinks {
-    .footer-link:not(:last-child) {
-      line-height: 30px;
+      color: $color-main;
     }
   }
   .footer-header {
     margin-top: 0 !important;
+  }
+
+  .containerish {
+    display: grid;
+
+    .footer-left {
+      background: $color-light;
+      padding: 40px 20px;
+
+      .footer-header {
+        margin-bottom: 2rem !important;
+      }
+
+      .ui-btn {
+        display: inline-block;
+        width: auto;
+        padding: 0.2rem 1rem;
+        margin-bottom: 0 !important;
+        vertical-align: middle;
+      }
+    }
+    .footer-right {
+      background: url("../../img/footer-right-bg@2x.jpg") center / cover;
+      padding: 40px 20px;
+      display: grid;
+
+      .footer-header {
+        margin-bottom: 2rem !important;
+      }
+
+      .right-left {
+        margin-bottom: 2rem;
+      }
+      .right-right {
+        ul {
+          padding: 0;
+          list-style-type: none;
+
+          li:not(:last-child) {
+            line-height: 40px !important;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -51,7 +72,7 @@
 /* FOOTER 2 SECTION */
 /* -------------------------------------------------------------------------- */
 .footer2 {
-  background-color: $color-dark-accent;
+  background-color: $color-light-accent;
   width: 100%;
   padding: 0.6rem 30px;
 

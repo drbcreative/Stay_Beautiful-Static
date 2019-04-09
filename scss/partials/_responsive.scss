@@ -223,6 +223,53 @@
     }
   }
   /* FOOTER ******************************************************* */
+  .footer1 {
+    min-height: 300px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+
+      .footer-left {
+        background: $color-light;
+        padding: 40px 20px;
+
+        .ui-btn {
+          display: inline-block !important;
+          width: auto;
+          min-width: 50px !important;
+          max-width: 150px !important;
+          padding: 0.2rem 1rem;
+          margin-bottom: 0 !important;
+          vertical-align: middle;
+        }
+      }
+      .footer-right {
+        background: url("../../img/footer-right-bg@2x.jpg") center / cover;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+
+        .footer-header {
+          margin-bottom: 2rem !important;
+        }
+
+        .right-left {
+          margin-bottom: 2rem;
+        }
+        .right-right {
+          ul {
+            padding: 0;
+            list-style-type: none;
+
+            li:not(:last-child) {
+              line-height: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -420,6 +467,58 @@
   /* EVENT ******************************************************** */
   /* APPOINTMENTS ************************************************* */
   /* FOOTER ******************************************************* */
+  .footer1 {
+    min-height: 300px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+
+      .footer-left {
+        background: $color-light;
+        padding: 2rem 6rem;
+
+        .ui-btn {
+          display: inline-block !important;
+          width: auto;
+          min-width: 50px !important;
+          max-width: 150px !important;
+          padding: 0.2rem 1rem;
+          margin-bottom: 0 !important;
+          vertical-align: middle;
+        }
+      }
+      .footer-right {
+        background: url("../../img/footer-right-bg@2x.jpg") center / cover;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+
+        .footer-header {
+          margin-bottom: 2rem !important;
+        }
+
+        .right-left {
+          margin-bottom: 0;
+        }
+        .right-right {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          ul {
+            padding: 0;
+            list-style-type: none;
+
+            li:not(:last-child) {
+              line-height: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -560,6 +659,42 @@
   /* EVENT ******************************************************** */
   /* APPOINTMENTS ************************************************* */
   /* FOOTER ******************************************************* */
+  .footer1 {
+    min-height: 300px;
+
+    .containerish {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-column-gap: 2rem;
+
+      .footer-left {
+        background: $color-light;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          max-width: 300px;
+        }
+      }
+      .footer-right {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+
+        .footer-header {
+          margin-bottom: 2rem !important;
+        }
+
+        .right-left {
+          margin-bottom: 2rem;
+        }
+        .right-right {
+          align-items: flex-start;
+        }
+      }
+    }
+  }
 }
 /* -------------------------------------------------------------------------- */
 /* MACBOOK PRO 15" BREAKPOINT (Large Desktops 1400px and up) */

@@ -58,7 +58,7 @@ h2 {
     font-style: italic; }
 
 h3 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.875rem;
   line-height: 1.875rem;
   font-weight: 400; }
@@ -71,7 +71,7 @@ h6 {
   font-weight: 400; }
 
 .footer-header {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 30px;
   line-height: 30px; }
   .footer-header.is-light {
@@ -98,10 +98,10 @@ h6 {
 
 /* Footer2 Text */
 .small-copy, .topbar .containerish .topbar-link {
-  font-size: 13px;
-  line-height: 13px;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400; }
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Quicksand", sans-serif; }
   .small-copy.is-semibold, .topbar .containerish .is-semibold.topbar-link {
     font-weight: 600; }
   .small-copy.is-bold, .topbar .containerish .is-bold.topbar-link {
@@ -570,10 +570,7 @@ section {
 /* FOOTER 1 SECTION */
 /* -------------------------------------------------------------------------- */
 .footer1 {
-  min-height: 300px;
-  padding: 40px 10px;
-  background: url("../img/footer-1-bg@2x.jpg") center/cover;
-  position: relative; }
+  min-height: 300px; }
   .footer1 .footer-link {
     color: #413f44;
     font-family: "Quicksand", sans-serif;
@@ -582,27 +579,41 @@ section {
     line-height: 20px; }
     .footer1 .footer-link:hover {
       text-decoration: none;
-      color: #6f6f74; }
-  .footer1 .blogimg {
-    width: 100%;
-    max-width: 175px;
-    height: auto;
-    display: block; }
-  .footer1 .ui-btn {
-    display: block;
-    width: auto !important;
-    max-width: 150px;
-    padding: 0.8rem 1.4rem; }
-  .footer1 #navlinks .footer-link:not(:last-child) {
-    line-height: 30px; }
+      color: #b1945f; }
   .footer1 .footer-header {
     margin-top: 0 !important; }
+  .footer1 .containerish {
+    display: grid; }
+    .footer1 .containerish .footer-left {
+      background: #f5f5f4;
+      padding: 40px 20px; }
+      .footer1 .containerish .footer-left .footer-header {
+        margin-bottom: 2rem !important; }
+      .footer1 .containerish .footer-left .ui-btn {
+        display: inline-block;
+        width: auto;
+        padding: 0.2rem 1rem;
+        margin-bottom: 0 !important;
+        vertical-align: middle; }
+    .footer1 .containerish .footer-right {
+      background: url("../../img/footer-right-bg@2x.jpg") center/cover;
+      padding: 40px 20px;
+      display: grid; }
+      .footer1 .containerish .footer-right .footer-header {
+        margin-bottom: 2rem !important; }
+      .footer1 .containerish .footer-right .right-left {
+        margin-bottom: 2rem; }
+      .footer1 .containerish .footer-right .right-right ul {
+        padding: 0;
+        list-style-type: none; }
+        .footer1 .containerish .footer-right .right-right ul li:not(:last-child) {
+          line-height: 40px !important; }
 
 /* -------------------------------------------------------------------------- */
 /* FOOTER 2 SECTION */
 /* -------------------------------------------------------------------------- */
 .footer2 {
-  background-color: #6f6f74;
+  background-color: #808280;
   width: 100%;
   padding: 0.6rem 30px; }
   .footer2 .footer-link {
@@ -1017,7 +1028,37 @@ img {
     justify-content: center; }
     .appointments .form-control {
       border-radius: 0; }
-  /* FOOTER ******************************************************* */ }
+  /* FOOTER ******************************************************* */
+  .footer1 {
+    min-height: 300px; }
+    .footer1 .containerish {
+      display: grid;
+      grid-template-columns: 1fr 2fr; }
+      .footer1 .containerish .footer-left {
+        background: #f5f5f4;
+        padding: 40px 20px; }
+        .footer1 .containerish .footer-left .ui-btn {
+          display: inline-block !important;
+          width: auto;
+          min-width: 50px !important;
+          max-width: 150px !important;
+          padding: 0.2rem 1rem;
+          margin-bottom: 0 !important;
+          vertical-align: middle; }
+      .footer1 .containerish .footer-right {
+        background: url("../../img/footer-right-bg@2x.jpg") center/cover;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr; }
+        .footer1 .containerish .footer-right .footer-header {
+          margin-bottom: 2rem !important; }
+        .footer1 .containerish .footer-right .right-left {
+          margin-bottom: 2rem; }
+        .footer1 .containerish .footer-right .right-right ul {
+          padding: 0;
+          list-style-type: none; }
+          .footer1 .containerish .footer-right .right-right ul li:not(:last-child) {
+            line-height: 40px !important; } }
 
 /* -------------------------------------------------------------------------- */
 /* LARGE BREAKPOINT (Desktops 992px and up) */
@@ -1163,7 +1204,43 @@ img {
         right: -30px; }
   /* EVENT ******************************************************** */
   /* APPOINTMENTS ************************************************* */
-  /* FOOTER ******************************************************* */ }
+  /* FOOTER ******************************************************* */
+  .footer1 {
+    min-height: 300px; }
+    .footer1 .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem; }
+      .footer1 .containerish .footer-left {
+        background: #f5f5f4;
+        padding: 2rem 6rem; }
+        .footer1 .containerish .footer-left .ui-btn {
+          display: inline-block !important;
+          width: auto;
+          min-width: 50px !important;
+          max-width: 150px !important;
+          padding: 0.2rem 1rem;
+          margin-bottom: 0 !important;
+          vertical-align: middle; }
+      .footer1 .containerish .footer-right {
+        background: url("../../img/footer-right-bg@2x.jpg") center/cover;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem; }
+        .footer1 .containerish .footer-right .footer-header {
+          margin-bottom: 2rem !important; }
+        .footer1 .containerish .footer-right .right-left {
+          margin-bottom: 0; }
+        .footer1 .containerish .footer-right .right-right {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .footer1 .containerish .footer-right .right-right ul {
+            padding: 0;
+            list-style-type: none; }
+            .footer1 .containerish .footer-right .right-right ul li:not(:last-child) {
+              line-height: 40px !important; } }
 
 /* -------------------------------------------------------------------------- */
 /* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
@@ -1261,7 +1338,31 @@ img {
         right: -30px; }
   /* EVENT ******************************************************** */
   /* APPOINTMENTS ************************************************* */
-  /* FOOTER ******************************************************* */ }
+  /* FOOTER ******************************************************* */
+  .footer1 {
+    min-height: 300px; }
+    .footer1 .containerish {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-column-gap: 2rem; }
+      .footer1 .containerish .footer-left {
+        background: #f5f5f4;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .footer1 .containerish .footer-left img {
+          max-width: 300px; }
+      .footer1 .containerish .footer-right {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem; }
+        .footer1 .containerish .footer-right .footer-header {
+          margin-bottom: 2rem !important; }
+        .footer1 .containerish .footer-right .right-left {
+          margin-bottom: 2rem; }
+        .footer1 .containerish .footer-right .right-right {
+          align-items: flex-start; } }
 
 /* -------------------------------------------------------------------------- */
 /* MACBOOK PRO 15" BREAKPOINT (Large Desktops 1400px and up) */

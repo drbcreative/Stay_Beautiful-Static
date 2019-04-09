@@ -45,7 +45,7 @@ h2 {
 }
 
 h3 {
-  font-family: $font-primary;
+  font-family: $font-secondary;
   font-size: 1.875rem; // 30px
   line-height: 1.875rem;
   font-weight: 400;
@@ -59,7 +59,7 @@ h6 {
   font-weight: 400;
 }
 .footer-header {
-  font-family: $font-primary;
+  font-family: $font-secondary;
   font-size: 30px;
   line-height: 30px;
   &.is-light {
@@ -94,10 +94,10 @@ h6 {
 
 /* Footer2 Text */
 .small-copy {
-  font-size: 13px;
-  line-height: 13px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
   font-family: $font-primary;
-  font-weight: 400;
 
   &.is-semibold {
     font-weight: 600;
