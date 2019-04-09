@@ -39,7 +39,7 @@ h1 {
   font-family: "Playfair Display", serif;
   font-size: 3.125rem;
   line-height: 3.125rem;
-  font-weight: 400; }
+  font-weight: 300; }
   h1.is-bold {
     font-weight: 700; }
   h1.is-italic {
@@ -49,7 +49,7 @@ h2 {
   font-family: "Playfair Display", serif;
   font-size: 3.125rem;
   line-height: 3.125rem;
-  font-weight: 400; }
+  font-weight: 300; }
   h2.is-light {
     font-weight: 300; }
   h2.is-bold {
@@ -61,7 +61,7 @@ h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.875rem;
   line-height: 1.875rem;
-  font-weight: 400; }
+  font-weight: 300; }
 
 /* All Other Headers */
 h4,
@@ -264,7 +264,7 @@ header {
 /* -------------------------------------------------------------------------- */
 .ui-btn {
   font-family: "Quicksand", sans-serif;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.05rem;
@@ -592,7 +592,7 @@ section {
       .footer1 .containerish .footer-left .ui-btn {
         display: inline-block;
         width: auto;
-        padding: 0.2rem 1rem;
+        padding: 0.3rem 0.5rem;
         margin-bottom: 0 !important;
         vertical-align: middle; }
     .footer1 .containerish .footer-right {
@@ -884,7 +884,7 @@ img {
 @media screen and (min-width: 768px) {
   .ui-btn {
     display: inline-flex;
-    min-width: 220px; }
+    min-width: 210px; }
   /* TOPBAR ******************************************************* */
   .topbar .containerish {
     max-width: 100% !important;
@@ -1217,9 +1217,7 @@ img {
         .footer1 .containerish .footer-left .ui-btn {
           display: inline-block !important;
           width: auto;
-          min-width: 50px !important;
-          max-width: 150px !important;
-          padding: 0.2rem 1rem;
+          padding: 0.3rem 0.5rem;
           margin-bottom: 0 !important;
           vertical-align: middle; }
       .footer1 .containerish .footer-right {
@@ -1232,6 +1230,8 @@ img {
           margin-bottom: 2rem !important; }
         .footer1 .containerish .footer-right .right-left {
           margin-bottom: 0; }
+          .footer1 .containerish .footer-right .right-left p {
+            line-height: 30px; }
         .footer1 .containerish .footer-right .right-right {
           display: flex;
           flex-direction: column;
@@ -1257,6 +1257,18 @@ img {
   .navbar .nav-logo {
     max-width: 200px;
     margin-top: 18px; }
+  .nav-item {
+    margin-right: 1rem; }
+    .nav-item .nav-link {
+      font-family: "Quicksand", sans-serif !important;
+      color: #413f44 !important;
+      font-size: 0.875rem;
+      font-style: normal; }
+      .nav-item .nav-link:hover {
+        color: #b1945f !important; }
+  .nav-item .nav-link:last-child {
+    padding-right: 0;
+    padding-left: 0; }
   /* HERO ********************************************************* */
   .hero {
     background: url("../img/hero-bg@2x.jpg") center/cover;

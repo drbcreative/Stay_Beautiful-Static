@@ -14,7 +14,7 @@ h1 {
   font-family: $font-secondary;
   font-size: 3.125rem; // 50px
   line-height: 3.125rem;
-  font-weight: 400;
+  font-weight: 300;
 
   &.is-bold {
     font-weight: 700;
@@ -29,7 +29,7 @@ h2 {
   font-family: $font-secondary;
   font-size: 3.125rem; // 50px
   line-height: 3.125rem;
-  font-weight: 400;
+  font-weight: 300;
 
   &.is-light {
     font-weight: 300;
@@ -48,7 +48,7 @@ h3 {
   font-family: $font-secondary;
   font-size: 1.875rem; // 30px
   line-height: 1.875rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* All Other Headers */
